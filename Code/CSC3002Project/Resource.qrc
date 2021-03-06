@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>win/editcopy.png</file>
+        <file>win/editcut.png</file>
+        <file>win/editpaste.png</file>
+        <file>win/editredo.png</file>
+        <file>win/editundo.png</file>
+        <file>win/exportpdf.png</file>
+        <file>win/filenew.png</file>
+        <file>win/fileopen.png</file>
+        <file>win/fileprint.png</file>
+        <file>win/filesave.png</file>
+        <file>win/textbold.png</file>
+        <file>win/textcenter.png</file>
+        <file>win/textitalic.png</file>
+        <file>win/textjustify.png</file>
+        <file>win/textleft.png</file>
+        <file>win/textright.png</file>
+        <file>win/textunder.png</file>
+        <file>win/zoomin.png</file>
+        <file>win/zoomout.png</file>
+        <file>image/About.ico</file>
+        <file>image/Copy.ico</file>
+        <file>image/Knob Cancel.ico</file>
+        <file>image/Knob Play Green.ico</file>
+        <file>image/Check.ico</file>
+        <file>image/Knob Loop On.ico</file>
+    </qresource>
+</RCC>

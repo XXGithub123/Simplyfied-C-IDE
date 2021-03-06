@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>789</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Code Editor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>771</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QTextEdit" name="Editor"/>
+    <widget class="QTextBrowser" name="Terminal">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="overwriteMode">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>789</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCode_Editor">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+    <addaction name="actionRefresh"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionRedo"/>
+    <addaction name="actionUndo"/>
+   </widget>
+   <widget class="QMenu" name="menuCompile">
+    <property name="title">
+     <string>Compile</string>
+    </property>
+    <addaction name="actionCompile_to_other_codes"/>
+   </widget>
+   <widget class="QMenu" name="menuRun">
+    <property name="title">
+     <string>Run</string>
+    </property>
+    <addaction name="actionRun_in_terminal"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionInformation"/>
+   </widget>
+   <widget class="QMenu" name="menuDebug">
+    <property name="title">
+     <string>Debug</string>
+    </property>
+    <addaction name="actionDebugger"/>
+   </widget>
+   <addaction name="menuCode_Editor"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuRun"/>
+   <addaction name="menuCompile"/>
+   <addaction name="menuDebug"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>2</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="actionRun_in_terminal"/>
+   <addaction name="actionExit"/>
+   <addaction name="actionRefresh"/>
+   <addaction name="actionInformation"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/win/filenew.png</normaloff>:/rec/win/filenew.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/win/fileopen.png</normaloff>:/rec/win/fileopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/win/filesave.png</normaloff>:/rec/win/filesave.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/win/filesave.png</normaloff>:/rec/win/filesave.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/win/editcut.png</normaloff>:/rec/win/editcut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/win/editcopy.png</normaloff>:/rec/win/editcopy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/win/editpaste.png</normaloff>:/rec/win/editpaste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/win/editredo.png</normaloff>:/rec/win/editredo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/win/editundo.png</normaloff>:/rec/win/editundo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRun_in_terminal">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/image/Knob Play Green.ico</normaloff>:/rec/image/Knob Play Green.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Run in terminal</string>
+   </property>
+  </action>
+  <action name="actionInformation">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/image/About.ico</normaloff>:/rec/image/About.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Information</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/image/Knob Cancel.ico</normaloff>:/rec/image/Knob Cancel.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionCompile_to_other_codes">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/image/Copy.ico</normaloff>:/rec/image/Copy.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Compile to other codes</string>
+   </property>
+  </action>
+  <action name="actionDebugger">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/image/Check.ico</normaloff>:/rec/image/Check.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Debugger</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/image/Knob Loop On.ico</normaloff>:/rec/image/Knob Loop On.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

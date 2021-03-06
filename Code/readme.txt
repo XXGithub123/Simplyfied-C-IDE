@@ -1,0 +1,1 @@
+This is a whole Qt Creator project.
