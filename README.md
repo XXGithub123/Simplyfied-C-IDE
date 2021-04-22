@@ -1,12 +1,19 @@
 # Simplyfied-C-IDE
 
 Team members:
-Yuzhe Jin  118010128\n
-Wentao Guo  117010078\n
-Yuan Gao  118010075\n
-Yuhao Du  118010053\n
-Jiaqi Liu  117010165\n
-Hanshen Jing  117010112\n
+
+Yuzhe Jin  118010128
+
+Wentao Guo  117010078
+
+Yuan Gao  118010075
+
+Yuhao Du  118010053
+
+Jiaqi Liu  117010165
+
+Hanshen Jing  117010112
+
 
 This project contains editor, compiler, assembler, simulator and debugger of a simple C++ IDE.
 
