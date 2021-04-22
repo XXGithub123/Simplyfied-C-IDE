@@ -1,6 +1,6 @@
 # Simplyfied-C-IDE
 
-##Team members##
+## Team members ##
 * Yuzhe Jin  118010128
 * Wentao Guo  117010078
 * Yuan Gao  118010075
@@ -8,7 +8,7 @@
 * Jiaqi Liu  117010165
 * Hanshen Jing  117010112
 
-##Intro##
+## Intro ##
 This project contains editor, compiler, assembler, simulator and debugger of a simple C++ IDE.
 
 The detailed rules for simplified C language are written in the report
