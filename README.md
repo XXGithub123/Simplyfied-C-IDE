@@ -9,14 +9,9 @@
 * Hanshen Jing  117010112
 
 ## Intro ##
-This project contains editor, compiler, assembler, simulator and debugger of a simple C++ IDE.
+This project contains editor, compiler, assembler, simulator and debugger of a simple C++ IDE. The detailed rules for simplified C language are written in the report.
 
-The detailed rules for simplified C language are written in the report
-
-Source code is under /Code/CSC3002Project
-
-Executable file is under /ExecutableFile/ExeFile
-
-Test files are under /Testfile
-
-Report is under /Report
+* Source code is under /Code/CSC3002Project
+* Executable file is under /ExecutableFile/ExeFile
+* Test files are under /Testfile
+* Report is under /Report
